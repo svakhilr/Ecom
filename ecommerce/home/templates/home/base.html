@@ -140,9 +140,11 @@ $(document).ready(function() {
 						<span class="badge badge-pill badge-danger notify">{{item_count}}</span>
 					</a>
 					<div>
-					<a href="{% url 'wishlist' %}" title="wishlist icons" class="widget-header pl-3 ml-3">
+					{% if user.id is not none  %}	
+					  <a href="{% url 'wishlist' %}" title="wishlist icons" class="widget-header pl-3 ml-3">
 						<div class="icon icon-sm rounded-circle border"><i class='fa fa-heart'></i></div>
-					</a>
+					   </a>
+					{% endif %}
 				    </div>
 				</div> <!-- widgets-wrap.// -->
 			</div> <!-- col.// -->
