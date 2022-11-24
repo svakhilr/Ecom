@@ -108,8 +108,8 @@
       	</td>
       	<td>
       		<div class="price-wrap">
-      			<var class="price">$ {{ cart_item.subtotal }}</var>
-      			<small class="text-muted"> $ {{ cart_item.product.price }} each </small>
+      			<var class="price">Rs {{ cart_item.subtotal }}</var>
+      			<small class="text-muted"> Rs {{ cart_item.product.price }} each </small>
       		</div> <!-- price-wrap .// -->
       	</td>
 
@@ -125,8 +125,8 @@
           :
         </td>
         <td>
-          <small class="text-muted"> $ {{ tax }}  </small>
-          <dd class="text-dark b">₹ <strong id="grand_total">{{grand_total}}</strong></dd>
+          <small class="text-muted"> Rs {{ tax }}  </small>
+          <dd class="text-dark b">Rs <strong id="grand_total">{{grand_total}}</strong></dd>
         </td>
       </tr>
       <tr>
@@ -138,7 +138,7 @@
         </td>
         
         <td>
-          <dd class=" text-success b">-₹<strong id="amount_pay">0</strong></dd>
+          <dd class=" text-success b">-Rs<strong id="amount_pay">0</strong></dd>
         </td>
         </tr>
         <tr>
@@ -149,7 +149,7 @@
           :
         </td>
         <td>
-          <dd class=" text-dark b">₹ <strong id="discount_price">{{grand_total}} </strong></dd>
+          <dd class=" text-dark b">Rs <strong id="discount_price">{{grand_total}} </strong></dd>
         </td>
       </tr>
       </tbody>
